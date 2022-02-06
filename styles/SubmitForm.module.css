@@ -1,0 +1,35 @@
+.ButtonContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  background: rgba(18, 24, 32, 0.8);
+  backdrop-filter: blur(3px);
+  bottom: 0;
+  z-index: 1;
+  padding: 2rem 0;
+}
+
+.div {
+  position: fixed !important;
+  bottom: 2rem;
+  right: 21rem;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1440px) {
+  .div {
+    right: 11rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .ButtonContainer {
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+  .div {
+    right: 2rem;
+    bottom: 0.75rem;
+  }
+}

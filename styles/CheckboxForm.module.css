@@ -1,0 +1,15 @@
+.ParentDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	color: var(--text-color);
+	padding: 2rem 3rem;
+}
+.ImageDescription {
+	color: var(--text-active-color);
+	font-size: 0.8rem;
+}
+.FormControlLabel {
+	margin: 0;
+}

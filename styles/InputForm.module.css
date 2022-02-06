@@ -1,0 +1,15 @@
+.Div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 4rem;
+}
+.ChildDiv {
+	display: inline-block;
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+}
+.ImageDescription {
+	color: var(--text-active-color);
+}
