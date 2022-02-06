@@ -24,6 +24,7 @@ function ScrollTopButton() {
       onClick={() => setScroll(true)}
       variant='outlined'
       className={styles.div}
+      aria-label='Go to top'
     >
       <ArrowUpwardIcon />
     </ColorIconButton>

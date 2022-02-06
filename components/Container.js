@@ -49,6 +49,7 @@ function Container() {
                       const { [el.id]: deletedProp, ...newObj } = values;
                       setValues(newObj);
                     }}
+                    aria-label='Clear input'
                   >
                     <CloseIcon />
                   </ColoredButton>
