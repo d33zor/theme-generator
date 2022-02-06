@@ -8,6 +8,7 @@ import CheckboxForm from './CheckboxForm';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import SearchBox from './SearchBox';
+import InputAdornment from '@mui/material/InputAdornment';
 
 // Component ------------------------------------------------------------------------
 
@@ -46,15 +47,19 @@ function Container() {
               value={values[el.id] ? values[el.id] : ''}
               InputProps={{
                 endAdornment: (
-                  <ColoredButton
-                    onClick={() => {
-                      const { [el.id]: deletedProp, ...newObj } = values;
-                      setValues(newObj);
-                    }}
-                    aria-label='Clear input'
-                  >
-                    <CloseIcon />
-                  </ColoredButton>
+                  <InputAdornment position='end'>
+                    {values[el.id] && (
+                      <ColoredButton
+                        onClick={() => {
+                          const { [el.id]: deletedProp, ...newObj } = values;
+                          setValues(newObj);
+                        }}
+                        aria-label='Clear input'
+                      >
+                        <CloseIcon />
+                      </ColoredButton>
+                    )}
+                  </InputAdornment>
                 ),
               }}
             />
