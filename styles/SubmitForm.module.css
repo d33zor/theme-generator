@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   position: sticky;
-  background: rgba(18, 24, 32, 0.8);
+  /* background: rgba(18, 24, 32, 0.8); */
+  background-color: var(--background-color);
   backdrop-filter: blur(3px);
   bottom: 0;
   z-index: 1;

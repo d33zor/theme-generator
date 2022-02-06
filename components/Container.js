@@ -7,6 +7,7 @@ import SubmitForm from './SubmitForm';
 import CheckboxForm from './CheckboxForm';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import SearchBox from './SearchBox';
 
 // Component ------------------------------------------------------------------------
 
@@ -34,6 +35,7 @@ function Container() {
 
   return (
     <>
+      <SearchBox />
       <div className={styles.Div}>
         {data.map((el) => {
           return el.type === 'input' ? (

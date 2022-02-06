@@ -1,0 +1,31 @@
+.Container {
+  width: 100%;
+  /* background-color: rgba(18, 24, 32, 0.8); */
+  background-color: var(--background-color);
+  backdrop-filter: blur(3px);
+  z-index: 4;
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Input {
+  width: 20vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .Input {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 960px) {
+  .Input {
+    width: 50vw;
+  }
+  .Container {
+    margin: 1rem 0;
+  }
+}

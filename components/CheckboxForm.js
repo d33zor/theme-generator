@@ -11,7 +11,7 @@ function CheckboxForm({ data: { name, id, url }, handleChange }) {
       <FormControlLabel
         control={<CheckBox id={id} onClick={handleChange} />}
         label={name}
-        className={styles.FormControlLabel}
+        className={`${styles.FormControlLabel} checkbox-form`}
       />
       <a
         className={styles.ImageDescription}

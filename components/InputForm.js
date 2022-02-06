@@ -2,6 +2,7 @@ import { TextField } from '@mui/material/';
 import styles from '../styles/InputForm.module.css';
 import styled from '@mui/styled-engine';
 import { DebounceInput } from 'react-debounce-input';
+import { useRef } from 'react';
 
 // Component ------------------------------------------------------------------------
 
@@ -12,10 +13,11 @@ function InputForm({
   value,
 }) {
   return (
-    <div className={styles.Div}>
+    <div className={`${styles.Div} form`}>
       <DebounceInput
         debounceTimeout={300}
         onChange={handleChange}
+        data-name={name}
         id={id}
         value={value}
         element={Input}
